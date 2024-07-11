@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     # TPA
     'rest_framework',
 
+    # My Apps
+    'student_path',
+
 ]
 
 MIDDLEWARE = [
