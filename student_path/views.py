@@ -23,4 +23,4 @@ class StudentMVS(ModelViewSet):
     # pagination_class = CustomCursorPagination
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_fields = ["first_name", "number"]
-    search_fields = ["last_name"]
+    search_fields = ["first_name", "last_name"]
