@@ -15,4 +15,4 @@ class PathMVS(ModelViewSet):
 class StudentMVS(ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
-    pagination_class = CustomPageNumberPagination
+    # pagination_class=CustomPageNumberPagination
