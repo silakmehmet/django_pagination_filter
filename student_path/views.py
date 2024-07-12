@@ -11,10 +11,12 @@ class PathMVS(ModelViewSet):
     queryset = Path.objects.all()
     serializer_class = PathSerializer
     # pagination_class = CustomLimitOffsetPagination
+    filterset_fields = ["path_name"]
 
 
 class StudentMVS(ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
-    # pagination_class=CustomPageNumberPagination
-    pagination_class = CustomCursorPagination
+    pagination_class = CustomPageNumberPagination
+    # pagination_class = CustomCursorPagination
+    filterset_fields = ["first_name"]
